@@ -1,0 +1,47 @@
+<resources>
+    <!---Menu principal-->
+    <string name="app_name">Agenda Personal</string>
+    <string name="hintUsuario">Usuario</string>
+    <string name="hintPsswd">Contraseña</string>
+    <string name="btnIniciarSesion">Iniciar Sesion</string>
+    <string name="btnRegistrarse">Registrarse</string>
+
+    <!---Pantalla login-->
+    <string name="lblBienvenido">Bienvenido a su Agenda de tareas personal.\n ¿Que desea hacer?</string>
+    <string name="btnConsultarTareas">Consultar listado de tareas</string>
+    <string name="btnCrearTarea">Crear nueva tarea</string>
+
+    <!---Pantalla registrar usuario-->
+    <string name="lblNombre">Nombre</string>
+    <string name="hintNombre">Usuario</string>
+    <string name="lblContraseniaAntigua">Contraseña antigua</string>
+    <string name="hintContraseniaAntigua">Contraseña antigua</string>
+    <string name="lblContraseniaNueva">Contraseña nueva</string>
+    <string name="hintContraseniaNueva">Introduce contraseña nueva</string>
+    <string name="hintContraseniaNueva2">Repite contraseña nueva</string>
+    <string name="btnGuardarRegistro">Guardar</string>
+    <string name="btnCancelarRegistro">Cancelar</string>
+
+    <!---Pantalla listado de tareas-->
+    <string name="btnTodas">TODAS</string>
+    <string name="btnHechas">HECHAS</string>
+    <string name="btnPendientes">PENDIENTES</string>
+
+    <!---Menu opciones-->
+    <string name="acercaDe">Acerca de</string>
+    <string name="cambiarContrasenia">Cambiar contraseña</string>
+    <string name="crearTarea">Crear nueva tarea</string>
+    <string name="borrarTareas">Borrar lista de tareas</string>
+
+
+    <!---Dialogo borrar-->
+    <string name="tituloBorrar">Borrar Lista de Tareas</string>
+    <string name="mensajeBorrar">Se va a proceder a borrar la lista de tareas. Una vez ejecutada esta opcion no podra deshacerse. ¿Esta seguro de que desea continuar?</string>
+    <string name="siBorrar">Si</string>
+    <string name="noBorrar">No</string>
+    <string name="mensajeBorrado">La lista de tareas ha sido borrada</string>
+    <string name="mensajeCancelar">Se ha cancelado el borrado</string>
+    <string name="SinElegir">No has seleccionado ninguna opcion</string>
+
+
+</resources>
