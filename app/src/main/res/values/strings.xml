@@ -1,37 +1,95 @@
 <resources>
+    <!---Pantalla de carga-->
+    <string name="lblPowered">Powered by</string>
+    <string name="dscrIcoAndroid">Icono Android</string>
+
     <!---Menu principal-->
     <string name="app_name">Agenda Personal</string>
     <string name="hintUsuario">Usuario</string>
     <string name="hintPsswd">Contraseña</string>
     <string name="btnIniciarSesion">Iniciar Sesion</string>
     <string name="btnRegistrarse">Registrarse</string>
+    <string name="chkBxRecordar">Recordar usuario</string>
 
     <!---Pantalla login-->
     <string name="lblBienvenido">Bienvenido a su Agenda de tareas personal.\n ¿Que desea hacer?</string>
     <string name="btnConsultarTareas">Consultar listado de tareas</string>
     <string name="btnCrearTarea">Crear nueva tarea</string>
+    <string name="descrIcoUsuario">Icono usuario</string>
+    <string name="descrIcoCandado">Icono candado</string>
+    <string name="descrIcoVisibility">Icono visibilidad</string>
 
     <!---Pantalla registrar usuario-->
     <string name="lblNombre">Nombre</string>
     <string name="hintNombre">Usuario</string>
-    <string name="lblContraseniaAntigua">Contraseña antigua</string>
-    <string name="hintContraseniaAntigua">Contraseña antigua</string>
-    <string name="lblContraseniaNueva">Contraseña nueva</string>
-    <string name="hintContraseniaNueva">Introduce contraseña nueva</string>
-    <string name="hintContraseniaNueva2">Repite contraseña nueva</string>
+    <string name="lblPasswdAntigua">Contraseña antigua</string>
+    <string name="hintPasswdAntigua">Contraseña antigua</string>
+    <string name="lblPasswdNueva">Contraseña nueva</string>
+    <string name="hintPasswdNueva">Introduce contraseña nueva</string>
+    <string name="hintPasswdNueva2">Repite contraseña nueva</string>
+    <string name="lblPasswd">Contraseña</string>
+    <string name="hintPasswd">Introduce contraseña</string>
+    <string name="hintPasswd2">Repite contraseña</string>
     <string name="btnGuardarRegistro">Guardar</string>
+    <string name="btnRegistrar">Registrar</string>
     <string name="btnCancelarRegistro">Cancelar</string>
 
     <!---Pantalla listado de tareas-->
     <string name="btnTodas">TODAS</string>
     <string name="btnHechas">HECHAS</string>
     <string name="btnPendientes">PENDIENTES</string>
+    <string name="descrIcoAdd">Boton añadir</string>
 
     <!---Menu opciones-->
-    <string name="acercaDe">Acerca de</string>
-    <string name="cambiarContrasenia">Cambiar contraseña</string>
-    <string name="crearTarea">Crear nueva tarea</string>
-    <string name="borrarTareas">Borrar lista de tareas</string>
+    <string name="btnAcercaDe">Acerca de</string>
+    <string name="btnCambiarPasswd">Cambiar contraseña</string>
+    <string name="btnBorrarTareas">Borrar lista de tareas</string>
+    <string name="btnMultiselec">Seleccion multiple</string>
+    <string name="btnEnviarCorreo">Enviar tareas por correo</string>
+
+    <string name="txtAsunto">Listado de tareas</string>
+    <string name="btnCerrarSesion">Cerrar sesion</string>
+
+    <!---Menu context-->
+    <string name="btnModificarTarea">Modificar tarea</string>
+
+    <!---Pantalla crear tarea-->
+    <string name="lblCabecera">Introduzca los datos de la tarea que desea crear</string>
+    <string name="lblCabecera2">DETALLES DE TAREA</string>
+    <string name="lblCabecera3">Introduzca los datos de la tarea que desea modificars</string>
+    <string name="tarea">Tarea: </string>
+    <string name="lblNomTarea">Nombre:</string>
+    <string name="hintNomTarea" translatable="false"></string>
+    <string name="lblDescripcion">Descripción: </string>
+    <string name="hintDescripcion" translatable="false"></string>
+    <string name="lblFecha">Fecha: </string>
+    <string name="hintFecha" translatable="false"></string>
+    <string name="lblCoste">Coste: </string>
+    <string name="hintCoste" translatable="false"></string>
+    <string name="lblRealizada">Realizada: </string>
+    <string name="lblPrioridad">Prioridad: </string>
+    <string name="chkBxTareaRealizada">Tarea realizada</string>
+    <string name="btnEliminarTarea">Eliminar tarea</string>
+    <string name="btnSalirTarea">Cancelar</string>
+    <string name="btnGuardarTarea">Guardar</string>
+    <string-array name="arrayPrioridad">
+        <item name="baja">@string/spinBaja</item>
+        <item name="media">@string/spinMedia</item>
+        <item name="alta">@string/spinAlta</item>
+        <item name="urgente">@string/spinUrgente</item>
+    </string-array>
+    <string name="spinBaja">Baja</string>
+    <string name="spinMedia">Media</string>
+    <string name="spinAlta">Alta</string>
+    <string name="spinUrgente">Urgente</string>
+
+
+    <!---Contenedor Tarea-->
+    <string name="lblNomTareaCont" translatable="false"></string>
+    <string name="lblDescripcionCont" translatable="false"></string>
+    <string name="lblCosteCont" translatable="false"></string>
+    <string name="descrIcoPrio" translatable="false"></string>
+    <string name="descrIcoBorrar" translatable="false"></string>
 
 
     <!---Dialogo borrar-->
@@ -42,6 +100,11 @@
     <string name="mensajeBorrado">La lista de tareas ha sido borrada</string>
     <string name="mensajeCancelar">Se ha cancelado el borrado</string>
     <string name="SinElegir">No has seleccionado ninguna opcion</string>
+
+
+    <!---Dialogo Acerca de-->
+    <string name="tituloAcercaDe">Acerca de</string>
+    <string name="mensajeAcercaDe">Agenda Personal v1.0</string>
 
 
 </resources>

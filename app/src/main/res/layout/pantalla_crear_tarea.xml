@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PantallaCrearTarea">
+    android:background="@color/colorPrimary"
+    tools:context=".modeloDeVista.presenter.PantallaCrearTarea">
 
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/lblCabecera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/lblCabecera"
+        android:textColor="@drawable/edit_text_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -20,68 +22,213 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/lblNomTarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
+        android:text="@string/lblNomTarea"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/tfNomTarea"
+        app:layout_constraintEnd_toEndOf="@+id/lblCabecera"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintTop_toTopOf="@+id/tfNomTarea"
+        app:layout_constraintVertical_bias="0.692" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/tfNomTarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/hintNomTarea"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@drawable/edit_text_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintHorizontal_bias="0.726"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.074" />
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:id="@+id/lblDescripcion"
+        android:layout_width="88dp"
+        android:layout_height="19dp"
+        android:freezesText="false"
+        android:lines="2"
+        android:text="@string/lblDescripcion"
+        android:textColor="@drawable/edit_text_selector"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintEnd_toEndOf="@+id/lblNomTarea"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblNomTarea"
+        app:layout_constraintTop_toTopOf="@+id/tfDescripcion"
+        app:layout_constraintVertical_bias="0.031" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/tfDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="@string/hintDescripcion"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tfNomTarea"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tfNomTarea"
+        app:layout_constraintTop_toBottomOf="@+id/tfNomTarea"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFecha"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tfFecha"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="@+id/lblDescripcion"
+        app:layout_constraintTop_toTopOf="@+id/tfFecha"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <EditText
+        android:id="@+id/tfFecha"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/hintFecha"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:maxLines="1"
+        android:shadowColor="#2B2B2B"
+        android:textColor="@drawable/edit_text_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="@+id/tfDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/lblDescripcion"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/lblCoste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCoste"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lblFecha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblFecha"
+        app:layout_constraintTop_toTopOf="@+id/tfCoste"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/tfCoste"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintCoste"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="viewEnd"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tfFecha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tfFecha"
+        app:layout_constraintTop_toBottomOf="@+id/tfFecha"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/lblPrioridad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblPrioridad"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/cmbBxPrioridad"
+        app:layout_constraintEnd_toEndOf="@+id/lblCoste"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblCoste"
+        app:layout_constraintTop_toTopOf="@+id/cmbBxPrioridad"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <Spinner
+        android:id="@+id/cmbBxPrioridad"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tfCoste"
+        app:layout_constraintTop_toBottomOf="@+id/tfCoste"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <CheckBox
+        android:id="@+id/chkBxTareaRealizada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chkBxTareaRealizada"
+        android:textColor="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toTopOf="@+id/btnEliminarTarea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cmbBxPrioridad"
+        app:layout_constraintTop_toBottomOf="@+id/cmbBxPrioridad"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <Button
+        android:id="@+id/btnEliminarTarea"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/btnEliminarTarea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.802" />
+
+    <Button
+        android:id="@+id/btnSalirTarea"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="68dp"
+        android:text="@string/btnSalirTarea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnEliminarTarea"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnEliminarTarea"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminarTarea"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/btnGuardarTarea"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:text="@string/btnGuardarTarea"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSalirTarea"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalirTarea"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSalirTarea"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblMoneda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@drawable/edit_text_selector"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tfCoste"
+        app:layout_constraintTop_toTopOf="@+id/tfCoste" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

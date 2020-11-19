@@ -1,4 +1,4 @@
-package com.example.agenda.dialogos;
+package com.example.agenda.modeloDeVista.dialogos;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -18,8 +18,10 @@ public class DialogoBorrar extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+
         oBuilder = new AlertDialog.Builder(getActivity());
-        //---- Poner títutlo y mensaje al Dialog.
+
+                //---- Poner títutlo y mensaje al Dialog.
         oBuilder.setTitle(R.string.tituloBorrar);
         oBuilder.setMessage(R.string.mensajeBorrar);
         //---- Respuesta positiva.
@@ -28,7 +30,7 @@ public class DialogoBorrar extends DialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                         bElegido = true;
 
-                        oRespuesta.onRespuesta(getResources().getString(R.string.mensajeBorrado));
+                        oRespuesta.onRespuesta(getResources().getString(R.string.mensajeBorrado), 1);
                     } // onClick()
                 });
         //---- Respuesta negativa.
@@ -37,7 +39,7 @@ public class DialogoBorrar extends DialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                         bElegido = true;
 
-                        oRespuesta.onRespuesta(getResources().getString(R.string.mensajeCancelar));
+                        oRespuesta.onRespuesta(getResources().getString(R.string.mensajeCancelar), 0);
                     } // onClick()
                 });
 
@@ -55,7 +57,7 @@ public class DialogoBorrar extends DialogFragment {
         super.onDismiss(dialog);
         if ( bElegido == false ) {
 
-            oRespuesta.onRespuesta(getResources().getString(R.string.SinElegir));
+            oRespuesta.onRespuesta(getResources().getString(R.string.SinElegir), 0);
         }
     }
 }

@@ -5,17 +5,30 @@
     <item
         android:id="@+id/borrar_tareas"
         android:icon="@android:drawable/ic_menu_delete"
-        android:title="@string/borrarTareas"
+        android:title="@string/btnBorrarTareas"
         android:visible="true"
         app:showAsAction="always" />
     <item
-        android:id="@+id/acercaDe"
-        android:title="@string/acercaDe" />
+        android:id="@+id/btnMultiselect"
+        android:icon="@drawable/ic_multiselect"
+        android:title="@string/btnMultiselec"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
     <item
-        android:id="@+id/cambiarContrasenia"
-        android:title="@string/cambiarContrasenia" />
+        android:id="@+id/btnAcercaDe"
+        android:title="@string/btnAcercaDe" />
     <item
-        android:id="@+id/crearTarea"
-        android:title="@string/crearTarea" />
+        android:id="@+id/btnCambiarPasswd"
+        android:title="@string/btnCambiarPasswd" />
+    <item
+        android:id="@+id/btnCrearTarea"
+        android:title="@string/btnCrearTarea" />
+    <item
+    android:id="@+id/btnEnviarCorreo"
+    android:title="@string/btnEnviarCorreo" />
+    <item
+        android:id="@+id/btnCerrarSesion"
+        android:title="@string/btnCerrarSesion" />
 
 </menu>

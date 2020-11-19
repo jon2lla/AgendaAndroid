@@ -2,116 +2,120 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRegistrarUsuario"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/tfPasswdAntigua"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hintPasswdAntigua"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/lblPasswdAntigua"
+        app:layout_constraintTop_toBottomOf="@+id/lblPasswdAntigua" />
+
+    <EditText
+        android:id="@+id/tfPasswdNueva2"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hintPasswdNueva2"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tfPasswdNueva"
+        app:layout_constraintTop_toBottomOf="@+id/tfPasswdNueva" />
 
     <EditText
         android:id="@+id/tfNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="@string/hintNombre"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblNombre"
-        android:importantForAutofill="no" />
-
-    <TextView
-        android:id="@+id/lblContraseniaAntigua"
-        android:layout_width="128dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/lblContraseniaAntigua"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfNombre" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblNombre"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
 
     <EditText
-        android:id="@+id/tfContraseniaAntigua"
-        android:layout_width="238dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="@string/hintContraseniaAntigua"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblContraseniaAntigua"
-        android:importantForAutofill="no" />
-
-    <TextView
-        android:id="@+id/lblContraseniaNueva"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/lblContraseniaNueva"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfContraseniaAntigua" />
-
-    <EditText
-        android:id="@+id/tfContraseniaNueva2"
-        android:layout_width="241dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="@string/hintContraseniaNueva2"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfContraseniaNueva"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/tfContraseniaNueva"
+        android:id="@+id/tfPasswdNueva"
         android:layout_width="240dp"
-        android:layout_height="38dp"
+        android:layout_height="44dp"
         android:layout_marginTop="8dp"
+        android:layout_weight="1"
         android:ems="10"
-        android:hint="@string/hintContraseniaNueva"
+        android:hint="@string/hintPasswdNueva"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblContraseniaNueva"
-        android:importantForAutofill="no" />
+        app:layout_constraintStart_toStartOf="@+id/lblPasswdNueva"
+        app:layout_constraintTop_toBottomOf="@+id/lblPasswdNueva" />
 
     <TextView
         android:id="@+id/lblNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="72dp"
+        android:layout_weight="1"
         android:text="@string/lblNombre"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/lblPasswdAntigua"
+        android:layout_width="128dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:text="@string/lblPasswdAntigua"
+        app:layout_constraintStart_toStartOf="@+id/tfNombre"
+        app:layout_constraintTop_toBottomOf="@+id/tfNombre" />
+
+    <TextView
+        android:id="@+id/lblPasswdNueva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:text="@string/lblPasswdNueva"
+        app:layout_constraintStart_toStartOf="@+id/tfPasswdAntigua"
+        app:layout_constraintTop_toBottomOf="@+id/tfPasswdAntigua" />
+
     <Button
         android:id="@+id/btnGuardarRegistro"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="152dp"
+        android:gravity="center|center_horizontal|center_vertical"
         android:text="@string/btnGuardarRegistro"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfContraseniaNueva2" />
+        app:layout_constraintTop_toBottomOf="@+id/tfPasswdNueva2"
+        app:layout_constraintVertical_bias="0.577" />
 
     <Button
         android:id="@+id/btnCancelarRegistro"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/btnCancelarRegistro"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGuardarRegistro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGuardarRegistro" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardarRegistro"
+        app:layout_constraintTop_toTopOf="@+id/btnGuardarRegistro"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
