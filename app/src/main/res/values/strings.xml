@@ -18,6 +18,8 @@
     <string name="descrIcoUsuario">Icono usuario</string>
     <string name="descrIcoCandado">Icono candado</string>
     <string name="descrIcoVisibility">Icono visibilidad</string>
+    <string name="tstLogin">Sesion iniciada</string>
+    <string name="tstUsPsInc">Usuario y/o contraseña incorrectos</string>
 
     <!---Pantalla registrar usuario-->
     <string name="lblNombre">Nombre</string>
@@ -33,12 +35,20 @@
     <string name="btnGuardarRegistro">Guardar</string>
     <string name="btnRegistrar">Registrar</string>
     <string name="btnCancelarRegistro">Cancelar</string>
+    <string name="tstErrorActualizar">Error al actualizar</string>
+    <string name="tstPasswdInc">La contraseña actual no es correcta</string>
+    <string name="tstDifPasswd">Las contraseñas no coinciden</string>
+    <string name="tstUsuarioReg">Usuario registrado con exito</string>
+    <string name="tstModPasswd">Contraseña modificada con exito</string>
+    <string name="tstCamposVacios">Campo(s) vacio(s)</string>
+    <string name="tstUsuarioExistente">Usuario ya registrado</string>
 
     <!---Pantalla listado de tareas-->
     <string name="btnTodas">TODAS</string>
     <string name="btnHechas">HECHAS</string>
     <string name="btnPendientes">PENDIENTES</string>
     <string name="descrIcoAdd">Boton añadir</string>
+    <string name="tstBorradoExito">Tarea borrada con exito</string>
 
     <!---Menu opciones-->
     <string name="btnAcercaDe">Acerca de</string>
@@ -46,7 +56,7 @@
     <string name="btnBorrarTareas">Borrar lista de tareas</string>
     <string name="btnMultiselec">Seleccion multiple</string>
     <string name="btnEnviarCorreo">Enviar tareas por correo</string>
-
+    <string name="tstElegirCorreo">Elige un correo</string>
     <string name="txtAsunto">Listado de tareas</string>
     <string name="btnCerrarSesion">Cerrar sesion</string>
 
@@ -82,7 +92,11 @@
     <string name="spinMedia">Media</string>
     <string name="spinAlta">Alta</string>
     <string name="spinUrgente">Urgente</string>
-
+    <string name="tstTareaRegistrada">Tarea registrada con exito</string>
+    <string name="tstTareaBorrada">Tarea borrada con exito</string>
+    <string name="tstErrorBorrar">Error al borrar la tarea</string>
+    <string name="tstErrorModTarea">Error al modificar tarea</string>
+    <string name="tstTareaMod">Tarea modificada con exito</string>
 
     <!---Contenedor Tarea-->
     <string name="lblNomTareaCont" translatable="false"></string>
@@ -104,7 +118,7 @@
 
     <!---Dialogo Acerca de-->
     <string name="tituloAcercaDe">Acerca de</string>
-    <string name="mensajeAcercaDe">Agenda Personal v1.0</string>
+    <string name="mensajeAcercaDe">PLANda v1.0  Proxima version pronto disponible</string>
 
 
 </resources>

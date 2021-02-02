@@ -102,18 +102,18 @@ public class PantallaRegistrarUsuario extends AppCompatActivity implements View.
             u.setUsuario(tfNombre.getText().toString());
             u.setPasswd(tfPasswdNueva.getText().toString());
             if(u.isNull()){
-                Toast.makeText(this, "ERROR. Campos vacios", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.tstCamposVacios, Toast.LENGTH_SHORT).show();
             }
             else if(daoU.insertUsuario(u)){
-                Toast.makeText(this, "Usuario registrado con exito", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.tstUsuarioReg, Toast.LENGTH_SHORT).show();
                 registrado = true;
             }
             else{
-                Toast.makeText(this, "Usuario ya registrado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.tstUsuarioExistente, Toast.LENGTH_SHORT).show();
             }
         }
         else{
-            Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstDifPasswd, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -125,20 +125,20 @@ public class PantallaRegistrarUsuario extends AppCompatActivity implements View.
         if(tfPasswdAntigua.getText().toString().equals(usuario.getPasswd())) {
             if (tfPasswdNueva.getText().toString().equals(tfPasswdNueva2.getText().toString())) {
                 if (tfPasswdAntigua.getText().toString().equals("") || tfPasswdNueva.getText().toString().equals("") || tfPasswdNueva2.getText().toString().equals("")) {
-                    Toast.makeText(this, "Campo(s) vacio(s)", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, R.string.tstCamposVacios, Toast.LENGTH_LONG).show();
                 } else if (daoU.updatePasswd(usuario, tfPasswdNueva.getText().toString())) {
 
-                    Toast.makeText(this, "Contraseña modificada con exito", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.tstModPasswd, Toast.LENGTH_SHORT).show();
 
                     modificado = true;
                 } else {
-                    Toast.makeText(this, "ERROR al actualizar", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.tstErrorActualizar, Toast.LENGTH_SHORT).show();
                 }
             } else {
-                Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.tstDifPasswd, Toast.LENGTH_SHORT).show();
             }
         } else{
-            Toast.makeText(this, "La contraseña actual no es correcta", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstPasswdInc, Toast.LENGTH_SHORT).show();
         }
         return modificado;
     }

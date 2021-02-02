@@ -238,10 +238,10 @@ public class PantallaCrearTarea extends AppCompatActivity implements View.OnClic
         Tarea t = crearTarea();
         Log.i("TAREASSSS", t.toString());
         if(t.isNull()){
-            Toast.makeText(this, "ERROR. Campos vacios", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstCamposVacios, Toast.LENGTH_SHORT).show();
         }
         else if(daoT.insertTarea(t)){
-            Toast.makeText(this, "Tarea registrada con exito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstTareaRegistrada, Toast.LENGTH_SHORT).show();
             registrado = true;
         }
 
@@ -251,11 +251,11 @@ public class PantallaCrearTarea extends AppCompatActivity implements View.OnClic
     public boolean borrarTarea(){
         boolean borrado = false;
         if(daoT.deleteTarea(tarea)){
-            Toast.makeText(this, "Tarea borrada con exito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstTareaBorrada, Toast.LENGTH_SHORT).show();
             borrado = true;
         }
         else {
-            Toast.makeText(this, "Error al borrar la tarea", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstErrorBorrar, Toast.LENGTH_SHORT).show();
         }
 
         return borrado;
@@ -280,11 +280,11 @@ public class PantallaCrearTarea extends AppCompatActivity implements View.OnClic
             this.tarea.setRealizada(0);
         }
         if(daoT.updateTarea(tarea)){
-            Toast.makeText(this, "Tarea modificada con exito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstTareaMod, Toast.LENGTH_SHORT).show();
             modificado = true;
         }
         else {
-            Toast.makeText(this, "Error al modificar la tarea", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tstErrorModTarea, Toast.LENGTH_SHORT).show();
         }
 
         return modificado;

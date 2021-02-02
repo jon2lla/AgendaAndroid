@@ -181,7 +181,7 @@ public class PantallaListado extends AppCompatActivity implements RVClickInterfa
 
         Log.i("TAREA BORRADA", t.toString());
         if(daoT.deleteTarea(t) && !selecMultiple){
-            Toast.makeText(this,"Tarea borrada con exito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.tstBorradoExito, Toast.LENGTH_SHORT).show();
         }
         rva.notifyItemRemoved(position);
         return true;
@@ -284,7 +284,6 @@ public class PantallaListado extends AppCompatActivity implements RVClickInterfa
     @Override
     public void onItemClick(int position) {
         posicionActual = position;
-        Toast.makeText(this, "Hei", Toast.LENGTH_SHORT).show();
     }
 
     @Override

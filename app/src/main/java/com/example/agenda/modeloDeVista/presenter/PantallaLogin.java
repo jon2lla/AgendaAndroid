@@ -119,12 +119,12 @@ public class PantallaLogin extends AppCompatActivity implements View.OnClickList
         switch(v.getId()){
             case R.id.btnIniciarSesion:
                 if(comprobarUsuario()){
-                    Toast.makeText(this, "Sesion iniciada", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.tstLogin, Toast.LENGTH_SHORT).show();
 
                     lanzarMenuPrincipal(null);
                 }
                 else{
-                    Toast.makeText(this, "Usuario y/o contraseña incorrectos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, R.string.tstUsPsInc, Toast.LENGTH_LONG).show();
 
                 }
                 break;

@@ -1,4 +1,4 @@
-package com.example.agenda.modeloDeVista;
+package com.example.agenda.modelo;
 
 import android.content.Context;
 import android.media.AudioAttributes;

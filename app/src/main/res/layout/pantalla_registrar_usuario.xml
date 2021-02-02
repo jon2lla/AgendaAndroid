@@ -34,6 +34,19 @@
         app:layout_constraintTop_toBottomOf="@+id/tfPasswdNueva" />
 
     <EditText
+        android:id="@+id/tfPasswdNueva"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hintPasswdNueva"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/lblPasswdNueva"
+        app:layout_constraintTop_toBottomOf="@+id/lblPasswdNueva" />
+
+    <EditText
         android:id="@+id/tfNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,19 +60,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/lblNombre"
         app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
-
-    <EditText
-        android:id="@+id/tfPasswdNueva"
-        android:layout_width="240dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:hint="@string/hintPasswdNueva"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/lblPasswdNueva"
-        app:layout_constraintTop_toBottomOf="@+id/lblPasswdNueva" />
 
     <TextView
         android:id="@+id/lblNombre"

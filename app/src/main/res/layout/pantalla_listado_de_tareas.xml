@@ -13,7 +13,7 @@
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeLayout"
         android:layout_width="0dp"
-        android:layout_height="649dp"
+        android:layout_height="616dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -71,7 +71,7 @@
         <Button
             android:id="@+id/btnPendientes"
             android:layout_width="130dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:text="@string/btnPendientes"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -81,7 +81,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.829" />
+            app:layout_constraintVertical_bias="0.761" />
 
         <Button
             android:id="@+id/btnHechas"
@@ -104,12 +104,10 @@
             android:layout_height="49dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/descrIcoAdd"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnPendientes"
+            app:layout_constraintEnd_toStartOf="@+id/btnHechas"
+            app:layout_constraintStart_toEndOf="@+id/btnTodas"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.077"
             app:srcCompat="@mipmap/ic_add" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

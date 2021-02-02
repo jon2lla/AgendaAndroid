@@ -62,4 +62,24 @@
     <string name="spinUrgente">Urgent</string>
     <string name="dscrIcoAndroid">Android icon</string>
     <string name="tarea">Task:</string>
+    <string name="tstErrorActualizar">Update error</string>
+    <string name="tstPasswdInc">"The current password is not correct "</string>
+    <string name="tstDifPasswd">"Passwords do not match "</string>
+    <string name="tstUsuarioReg">User registered successfully</string>
+    <string name="tstModPasswd">Password modified successfully</string>
+    <string name="tstCamposVacios">Empty field(s)</string>
+    <string name="tstUsuarioExistente">User already registered</string>
+    <string name="tstBorradoExito">"Task deleted successfully "</string>
+    <string name="mensajeCancelar">Delete canceled</string>
+    <string name="SinElegir">You have not selected any option</string>
+    <string name="mensajeAcercaDe">PLANda v1.0 Next version soon available</string>
+    <string name="tstTareaRegistrada">Task registered successfully</string>
+    <string name="tstTareaBorrada">Task successfully deleted</string>
+    <string name="tstErrorBorrar">Failed to delete task</string>
+    <string name="tstErrorModTarea">Failed to modifiy task</string>
+    <string name="tstTareaMod">Task successfully deleted</string>
+    <string name="lblRealizada">Done:</string>
+    <string name="tstLogin">Logged in</string>
+    <string name="tstUsPsInc">"Incorrect username and/or password "</string>
+    <string name="tstElegirCorreo">Choose a mail</string>
 </resources>

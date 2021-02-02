@@ -15,7 +15,6 @@ import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.text.Layout;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -31,7 +30,6 @@ import android.widget.Toast;
 import com.example.agenda.R;
 import com.example.agenda.dao.DaoTarea;
 import com.example.agenda.dao.DaoUsuario;
-import com.example.agenda.modeloDeVista.ReproductorSonidos;
 import com.example.agenda.modeloDeVista.dialogos.DialogoAcercaDe;
 import com.example.agenda.modeloDeVista.dialogos.DialogoBorrar;
 import com.example.agenda.modeloDeVista.dialogos.DialogoBorrarInterface;
@@ -40,12 +38,9 @@ import com.example.agenda.modelo.Tarea;
 import com.example.agenda.modelo.Usuario;
 import com.example.agenda.modeloDeVista.recyclerView.AdaptadorContenedor;
 import com.example.agenda.modeloDeVista.recyclerView.ContenedorTarea;
-import com.example.agenda.modeloDeVista.recyclerView2.PantallaListado;
-import com.example.agenda.modeloDeVista.recyclerView2.RVClickInterface;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator;
@@ -144,7 +139,7 @@ public class PantallaListadoDeTareas extends AppCompatActivity implements Dialog
 
         Log.i("TAREA BORRADA", t.toString());
         if(daoT.deleteTarea(t) && !selecMultiple){
-            Toast.makeText(this,"Tarea borrada con exito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.tstBorradoExito, Toast.LENGTH_SHORT).show();
         }
         rva.notifyItemRemoved(position);
         return true;
@@ -268,7 +263,7 @@ public class PantallaListadoDeTareas extends AppCompatActivity implements Dialog
 
 
         //Accion: Mantener pulsado un contenedor
-        rva.setOnLongItemClickListener(new AdaptadorContenedor.onLongItemClickListener() {
+        rva.setOnLongItemClickListener(new AdaptadorContenedor.OnLongItemClickListener() {
             @Override
             public void ItemLongClicked(View v, int position) {
                 posicionActual = position;
@@ -423,9 +418,10 @@ public class PantallaListadoDeTareas extends AppCompatActivity implements Dialog
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnAniadir:
-                addTarea();
-                crearListaCont();
-                rva.notifyDataSetChanged();
+//                addTarea();
+//                crearListaCont();
+//                rva.notifyDataSetChanged();
+                lanzarPantallaCrearTarea(null);
                 break;
         }
     }
